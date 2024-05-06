@@ -6,34 +6,38 @@
     <title>CalculadoraDePropinas</title>
 </head>
 <body>
-    <div class="bodyOfCalculator">
+    <button class="buttonModal" onclick="window.modal1.showModal();">Abrir ventana modal</button>
+    <dialog id="modal1">
         <div class="screenOfCalculator">
             <div class="spaceOfScreen"></div>
         </div>
         <div class="keyboardCalculator">
             <div class="buttons">
                 <div class="lineaButtons1">
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
+                    <div class="button">1</div>
+                    <div class="button">2</div>
+                    <div class="button">3</div>
                 </div>
                 <div class="lineaButtons2">
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
+                    <div class="button">4</div>
+                    <div class="button">5</div>
+                    <div class="button">6</div>
                 </div>
                 <div class="lineaButtons3">
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
+                    <div class="button">7</div>
+                    <div class="button">8</div>
+                    <div class="button">9</div>
                 </div>
                 <div class="lineaButtons4">
-                    <div class="button"></div>
-                    <div class="button"></div>
-                    <div class="button"></div>
+                    <div class="button">DEL</div>
+                    <div class="button">OFF</div>
+                    <div class="button">=</div>
                 </div>
             </div>
         </div>
-    </div>
+    </dialog>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
