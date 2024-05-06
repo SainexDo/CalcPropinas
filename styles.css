@@ -4,6 +4,7 @@
     border-radius: 7px;
     background-color: deeppink;
     border: solid 3px black;
+    box-shadow:inset 1px 1px 3px azure;
 }
 
 .screenOfCalculator {
@@ -15,6 +16,8 @@
     margin-left: 6%;
     margin-top: 3%;
     font-family: cursive, bold;
+    color: azure;
+    font-size: 20px;
 }
 
 .buttons {
