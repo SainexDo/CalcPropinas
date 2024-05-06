@@ -1,0 +1,37 @@
+#modal1 {
+    width: 30%;
+    height: 80%;
+    border-radius: 7px;
+    background-color: deeppink;
+    border: solid 3px black;
+}
+
+.screenOfCalculator {
+    border: solid 3px black;
+    width: 88%;
+    height: 25%;
+    background-color: palevioletred;
+    border-radius: 7px;
+    margin-left: 6%;
+    margin-top: 3%;
+    font-family: cursive, bold;
+}
+
+.buttons {
+    margin-left: 11%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+    gap: 30px;
+
+}
+
+.button {
+    background-color: pink;
+    width: 70px;
+    height: 50px;
+    padding: 1%;
+    border-radius: 7px;
+    box-shadow:inset 2px 2px 2px azure;
+    font-family: cursive, bold;
+}

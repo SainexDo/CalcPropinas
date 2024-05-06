@@ -1,0 +1,1 @@
+let boton1 = document.getElementById('button-1').value
