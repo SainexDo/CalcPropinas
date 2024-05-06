@@ -5,6 +5,7 @@
     background-color: deeppink;
     border: solid 3px black;
     box-shadow:inset 1px 1px 3px azure;
+    overflow: hidden 30%;
 }
 
 .screenOfCalculator {
@@ -21,18 +22,18 @@
 }
 
 .buttons {
-    margin-left: 11%;
+    margin-left: 3%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 10%;
-    gap: 30px;
-
+    column-gap: 10px;
+    row-gap: 20px;
 }
 
 .button {
     background-color: pink;
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 45px;
     padding: 1%;
     border-radius: 7px;
     box-shadow:inset 2px 2px 2px azure;
