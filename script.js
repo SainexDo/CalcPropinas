@@ -11,6 +11,9 @@ let boton7 = document.getElementById('button-7');
 let boton8 = document.getElementById('button-8');
 let boton9 = document.getElementById('button-9');
 let botonmultiplicaion = document.getElementById('button-*');
+let botonigual = document.getElementById('button-=');
+let botonDelete = document.getElementById('button-DEL');
+let botonTrash = document.getElementById('button-trash');
 
 boton1.addEventListener('click', function () {
     screen.innerHTML += boton1.value
@@ -48,5 +51,9 @@ boton9.addEventListener('click', function () {
 botonmultiplicaion.addEventListener('click', function () {
     screen.innerHTML += botonmultiplicaion.value
 })
-
-
+botonigual.addEventListener('click', function () {
+    screen.textContent = eval(screen.textContent)
+})
+botonTrash.addEventListener('click', function () {
+    screen.innerHTML = '';
+})
