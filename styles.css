@@ -5,7 +5,6 @@
     background-color: deeppink;
     border: solid 3px black;
     box-shadow:inset 1px 1px 3px azure;
-    overflow: hidden 30%;
 }
 
 .screenOfCalculator {
@@ -38,4 +37,64 @@
     border-radius: 7px;
     box-shadow:inset 2px 2px 2px azure;
     font-family: cursive, bold;
+}
+
+.buttonGreen {
+    background-color: greenyellow;
+    width: 100px;
+    height: 45px;
+    padding: 1%;
+    border-radius: 7px;
+    box-shadow:inset 2px 2px 2px azure;
+    font-family: cursive, bold;
+    margin-left: 52%;
+    margin-top: 58%;
+    position: absolute;
+}
+
+#modal2 {
+    margin-left: 67%;
+    position: relative;
+    width: 15%;
+    height: 50%;
+    border-radius: 7px;
+    background-color: green;
+    border: solid 3px black;
+    box-shadow:inset 1px 1px 3px azure;
+}
+
+.buttonsP {
+    margin-left: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.screenOfPropines {
+    border: solid 3px black;
+    width: 88%;
+    height: 25%;
+    background-color: rgb(67, 148, 51);
+    border-radius: 7px;
+    margin-left: 6%;
+    margin-top: 3%;
+    font-family: cursive, bold;
+    color: azure;
+    font-size: 20px;
+}
+
+.buttonP {
+    background-color: greenyellow;
+    width: 45px;
+    height: 35px;
+    padding: 1%;
+    border-radius: 7px;
+    box-shadow:inset 2px 2px 2px azure;
+    font-family: cursive, bold;
+}
+
+.buttonsPF {
+
 }
