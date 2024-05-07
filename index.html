@@ -4,40 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CalculadoraDePropinas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button class="buttonModal" onclick="window.modal1.showModal();">Abrir ventana modal</button>
+    <button class="buttonModal" onclick="window.modal1.showModal();">Calculadora</button>
     <dialog id="modal1">
         <div class="screenOfCalculator">
-            <div class="spaceOfScreen"></div>
+            <div id="spaceOfScreen"></div>
         </div>
         <div class="keyboardCalculator">
             <div class="buttons">
-                <div class="lineaButtons1">
-                    <div class="button">1</div>
-                    <div class="button">2</div>
-                    <div class="button">3</div>
-                </div>
-                <div class="lineaButtons2">
-                    <div class="button">4</div>
-                    <div class="button">5</div>
-                    <div class="button">6</div>
-                </div>
-                <div class="lineaButtons3">
-                    <div class="button">7</div>
-                    <div class="button">8</div>
-                    <div class="button">9</div>
-                </div>
-                <div class="lineaButtons4">
-                    <div class="button">DEL</div>
-                    <div class="button">OFF</div>
-                    <div class="button">=</div>
-                </div>
+                <input class="button" id="button-1" type="button" value="1">
+                <input class="button" id="button-2" type="button" value="2">
+                <input class="button" id="button-3" type="button" value="3">
+                <input class="button" id="button-+" type="button" value="+">
+
+                <input class="button" id="button-4" type="button" value="4">
+                <input class="button" id="button-5" type="button" value="5">
+                <input class="button" id="button-6" type="button" value="6">
+                <input class="button" id="button--" type="button" value="-">
+
+                <input class="button" id="button-7" type="button" value="7">
+                <input class="button" id="button-8" type="button" value="8">
+                <input class="button" id="button-9" type="button" value="9">
+                <input class="button" id="button-*" type="button" value="*">
+
+                <button class="button" onclick="window.modal1.close();">OFF</button>
+                <input class="button" id="button-DEL" type="button" value="DEL">
+                <input class="button" id="button-=" type="button" value="=">
+                <input class="button" id="button-/" type="button" value="/">
+
+                <input class="button" id="button-" type="button" value="TRASH">
+                <input type="button" value="">
+                
             </div>
         </div>
     </dialog>
 
     <script src="script.js"></script>
+
 </body>
 </html>
 
