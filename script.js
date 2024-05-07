@@ -11,6 +11,11 @@ let boton7 = document.getElementById('button-7');
 let boton8 = document.getElementById('button-8');
 let boton9 = document.getElementById('button-9');
 let botonmultiplicaion = document.getElementById('button-*');
+let botonigual = document.getElementById('button-=');
+let botonDelete = document.getElementById('button-DEL');
+let botonTrash = document.getElementById('button-trash');
+let botonPropina = document.getElementById('button-propina');
+let boton0 = document.getElementById('button-0');
 
 boton1.addEventListener('click', function () {
     screen.innerHTML += boton1.value
@@ -48,5 +53,35 @@ boton9.addEventListener('click', function () {
 botonmultiplicaion.addEventListener('click', function () {
     screen.innerHTML += botonmultiplicaion.value
 })
+botonigual.addEventListener('click', function () {
+    screen.textContent = eval(screen.textContent)
+})
+botonTrash.addEventListener('click', function () {
+    screen.innerHTML = '';
+})
+boton0.addEventListener('click', function () {
+    screen.innerHTML += boton0.value
+})
 
+let screenP = document.getElementById('spaceOfScreenP');
 
+let botonigualP = document.getElementById('button-=p');
+let botonTrashP = document.getElementById('button-trashp');
+
+botonTrashP.addEventListener('click', function () {
+    screenP.innerHTML = '';
+})
+
+function modalc(a) {
+    screenP.innerHTML += a
+}
+
+botonigualP.addEventListener('click', function () {
+    let Rscreen = screen.textContent;
+    let RscreenP = screenP.textContent;
+    RscreenP = RscreenP / 100;
+    screen.textContent = eval(screen.textContent)
+    Rscreen * RscreenP;
+})
+
+//HACER QUE LOS RESULTADOS SE ESCRIBAN EN OTRA ZONA, NO ENCIMA DE LA OPERACION.
