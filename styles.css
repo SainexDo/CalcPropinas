@@ -17,7 +17,7 @@
     margin-top: 3%;
     font-family: cursive, bold;
     color: azure;
-    font-size: 20px;
+    font-size: 35px;
 }
 
 .buttons {
@@ -82,7 +82,7 @@
     margin-top: 3%;
     font-family: cursive, bold;
     color: azure;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .buttonP {
@@ -93,8 +93,4 @@
     border-radius: 7px;
     box-shadow:inset 2px 2px 2px azure;
     font-family: cursive, bold;
-}
-
-.buttonsPF {
-
 }
