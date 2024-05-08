@@ -20,6 +20,9 @@ let boton0 = document.getElementById('button-0');
 boton1.addEventListener('click', function () {
     screen.innerHTML += boton1.value
 })
+botonDelete.addEventListener('click', function () {
+    screen.innerHTML = screen.innerHTML.substring(0, screen.innerHTML.length-1)
+})
 boton2.addEventListener('click', function () {
     screen.innerHTML += boton2.value
 })
@@ -80,8 +83,6 @@ botonigualP.addEventListener('click', function () {
     let Rscreen = screen.textContent;
     let RscreenP = screenP.textContent;
     RscreenP = RscreenP / 100;
-    screen.textContent = eval(screen.textContent)
-    Rscreen * RscreenP;
+    Rscreen = eval(screen.textContent)
+    screenP.innerHTML = Rscreen * RscreenP;
 })
-
-//HACER QUE LOS RESULTADOS SE ESCRIBAN EN OTRA ZONA, NO ENCIMA DE LA OPERACION.

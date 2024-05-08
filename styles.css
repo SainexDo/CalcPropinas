@@ -1,11 +1,37 @@
+body {
+    background-image: url(imgs/galaxy1.webp);
+    image-rendering: optimizeQuality;
+    background-position: unset;
+    background-size: cover;
+}
+
+* {
+    font-family: cursive, bold;
+}
+
 #modal1 {
-    width: 30%;
-    height: 80%;
+    width: 20%;
+    height: 50%;
+    margin-left: 35%;
+    margin-top: -3%;
     border-radius: 7px;
-    background-color: deeppink;
+    background-image: url(imgs/galaxy1.webp);
     border: solid 3px black;
     box-shadow:inset 1px 1px 3px azure;
+    position: absolute;
 }
+
+.buttonModal {
+    background-color: deeppink;
+    border: solid 2px azure;
+    border-radius: 10px;
+    color: azure;
+    
+}
+.buttonModal:hover {
+    background-color: bisque;
+}
+ 
 
 .screenOfCalculator {
     border: solid 3px black;
@@ -17,7 +43,7 @@
     margin-top: 3%;
     font-family: cursive, bold;
     color: azure;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .buttons {
@@ -25,14 +51,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 10%;
-    column-gap: 15px;
-    row-gap: 15px;
+    column-gap: 5px;
+    row-gap: 5px;
 }
 
 .button {
     background-color: pink;
-    width: 60px;
-    height: 45px;
+    width: 30px;
+    height: 25px;
     padding: 1%;
     border-radius: 7px;
     box-shadow:inset 2px 2px 2px azure;
@@ -41,26 +67,28 @@
 
 .buttonGreen {
     background-color: greenyellow;
-    width: 100px;
-    height: 45px;
-    padding: 1%;
+    width: 77px;
+    height: 25px;
+    padding: 2%;
     border-radius: 7px;
     box-shadow:inset 2px 2px 2px azure;
     font-family: cursive, bold;
-    margin-left: 52%;
-    margin-top: 58%;
+    margin-left: 42%;
+    margin-top: 52%;
     position: absolute;
 }
 
 #modal2 {
-    margin-left: 67%;
-    position: relative;
-    width: 15%;
-    height: 50%;
+    margin-left: 60%;
+    margin-top: 5%;
+    width: 13%;
+    height: 40%;
     border-radius: 7px;
-    background-color: green;
+    background-image: url(imgs/galaxy2.jpg);
+    background-position: unset;
     border: solid 3px black;
     box-shadow:inset 1px 1px 3px azure;
+    position: absolute;
 }
 
 .buttonsP {
@@ -69,7 +97,7 @@
     grid-template-columns: repeat(3, 1fr);
     margin-top: 10%;
     column-gap: 15px;
-    row-gap: 15px;
+    row-gap: 12px;
 }
 
 .screenOfPropines {
@@ -80,17 +108,72 @@
     border-radius: 7px;
     margin-left: 6%;
     margin-top: 3%;
-    font-family: cursive, bold;
-    color: azure;
-    font-size: 25px;
+    color: blueviolet;
+    font-size: 17px;
 }
 
 .buttonP {
     background-color: greenyellow;
-    width: 45px;
-    height: 35px;
+    width: 30px;
+    height: 20px;
     padding: 1%;
     border-radius: 7px;
     box-shadow:inset 2px 2px 2px azure;
     font-family: cursive, bold;
+}
+#spaceOfResult {
+    width: 20%;
+    height: 8%;
+    position: relative;
+    margin-left: 80%;
+    text-align: right;
+}
+
+#imgWanda {
+    width: 70px;
+    height: auto;
+}
+
+.pagina {
+display: grid;
+grid-template-columns: 30% 70%;
+}
+
+.contieneTodo {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 50px;
+}
+
+.conteiner1 {
+    background-color: aqua;
+}
+
+header {
+    background-color: darkslateblue;
+    border: solid 2px goldenrod;
+    box-shadow: inset 10px 10px 15px;
+    box-shadow: 9px 9px 12px black;
+    width: 100%;
+    height: 50px;
+    color: azure;
+    display: grid;
+    grid-template-columns: 10% 10% 40% 40%;
+    text-align: center;
+    border-radius: 15px;
+    align-items: center;
+    background: transparent;
+}
+
+
+.titulo {
+    color: azure;
+    font-family: cursive, bold;
+    font-size: 30px;
+}
+
+.texto1 {
+    color: azure;
+    font-family: cursive, bold;
+    font-size: 18x;
 }

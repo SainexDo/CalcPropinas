@@ -7,10 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button class="buttonModal" onclick="window.modal1.showModal();">Calculadora</button>
+
+    <header>
+        <div>LOGO</div>
+        <div>Sobre mí</div>
+        <div>Contacto</div>
+        <div>JUrgen</div>
+    </header>
+
+    <h2 class="titulo">Lorem.</h2>
+    <div class="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, numquam necessitatibus? Eius explicabo, saepe amet dignissimos nihil dolore adipisci labore enim quis rerum consectetur, eos, quo nostrum ipsa facilis maiores.</div>
+    <button class="buttonModal" onclick="window.modal1.show();">Calculadora</button>
+
     <dialog id="modal1">
         <div class="screenOfCalculator">
             <div id="spaceOfScreen"></div>
+            <div id="spaceOfResult"></div>
         </div>
         <div class="keyboardCalculator">
             <div class="buttons">
@@ -34,15 +46,16 @@
                 <input class="button" id="button-0" type="button" value="0">
                 <input class="button" id="button-/" type="button" value="/">
 
-                <input class="button" id="button-trash" type="button" value="TRASH">
+                <input class="button" id="button-trash" type="button" value="C">
                 <input class="button" id="button-=" type="button" value="=">
-                <button class="buttonGreen" id="Propina" onclick="window.modal2.showModal();">PROPINA</button>
+                <button class="buttonGreen" id="Propina" onclick="window.modal2.show();">PROPINA</button>
             </div>
         </div>
     </dialog>
     <dialog id="modal2">
         <div class="screenOfPropines">
             <div id="spaceOfScreenP"></div>
+            <div id="spaceOfResultP"></div>
         </div>
         <div class="keyboardOfPropines">
             <div class="keyboardCalculator">
@@ -57,7 +70,7 @@
                     <input class="buttonP" onclick=modalc(8) id="button-8p" type="button" value="8">
                     <input class="buttonP" onclick=modalc(9) id="button-9p" type="button" value="9">
 
-                    <input class="buttonP" id="button-trashp" type="button" value="TRASH">
+                    <input class="buttonP" id="button-trashp" type="button" value="C">
                     <input class="buttonP" id="button-=p" type="button" value="=">
                     <button class="buttonP" onclick="window.modal2.close();">OFF</button>
                 </div>
@@ -65,6 +78,11 @@
         </div>
     </dialog>
 
+
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
