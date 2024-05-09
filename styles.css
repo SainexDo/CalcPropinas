@@ -1,13 +1,70 @@
-body {
-    background-image: url(imgs/galaxy1.webp);
+/* 
     image-rendering: optimizeQuality;
-    background-position: unset;
-    background-size: cover;
+    background-position: unset; */
+
+.containerAll {
+    display: grid;
+    grid-template-columns: 20% 80%;
 }
 
-* {
-    font-family: cursive, bold;
+.mainFaceText {
+    position: absolute;
+    margin-top: 0%;
+    color: azure;
+    font-size: 30px;
+    font-family: bolder, Tahoma, cursive;
+    margin-top: 5%;
+    margin-left: 2%;
+    .titulo {font-size: 77px; text-shadow: -20px 0px 7px red;}
 }
+.mainFaceText1 {
+    position: absolute;
+    color: azure;
+    font-size: 30px;
+    margin-top: 10%;
+    margin-left: 2%;
+    text-shadow:
+    5px 5px 10px black,
+    0 0 5em black,
+    0 0 0.9em black;
+}
+
+header {
+    background-image: url(imgs/header.avif);
+    image-rendering: optimizeQuality;
+    background-position: unset;
+    height: 200px;
+}
+
+nav {
+    position: relative;
+    background-color: darkslategray;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 35px;
+    color: azure;
+}
+
+.elementsnav {
+    width: 100%;
+    height: 55px;
+    background-color: darkcyan;
+    border-radius: 5px 10px 10px 5px;
+    box-shadow: 2px 3px 4px black;
+    border-top: 2px azure;
+}
+
+
+
+
+
+
+
+
+
+
 
 #modal1 {
     width: 20%;
@@ -15,9 +72,9 @@ body {
     margin-left: 35%;
     margin-top: -3%;
     border-radius: 7px;
-    background-image: url(imgs/galaxy1.webp);
+    background-image: url(imgs/galaxy2.jpg);
     border: solid 3px black;
-    box-shadow:inset 1px 1px 3px azure;
+    box-shadow: inset 1px 1px 3px azure;
     position: absolute;
 }
 
@@ -26,24 +83,26 @@ body {
     border: solid 2px azure;
     border-radius: 10px;
     color: azure;
-    
+
 }
+
 .buttonModal:hover {
     background-color: bisque;
 }
- 
+
 
 .screenOfCalculator {
     border: solid 3px black;
     width: 88%;
     height: 25%;
-    background-color: palevioletred;
+    backdrop-filter: blur(3px);
     border-radius: 7px;
     margin-left: 6%;
     margin-top: 3%;
     font-family: cursive, bold;
     color: azure;
     font-size: 25px;
+
 }
 
 .buttons {
@@ -61,17 +120,17 @@ body {
     height: 25px;
     padding: 1%;
     border-radius: 7px;
-    box-shadow:inset 2px 2px 2px azure;
+    box-shadow: inset 2px 2px 2px azure;
     font-family: cursive, bold;
 }
 
 .buttonGreen {
-    background-color: greenyellow;
+    background-color: greenytlow;
     width: 77px;
     height: 25px;
     padding: 2%;
     border-radius: 7px;
-    box-shadow:inset 2px 2px 2px azure;
+    box-shadow: inset 2px 2px 2px azure;
     font-family: cursive, bold;
     margin-left: 42%;
     margin-top: 52%;
@@ -84,10 +143,9 @@ body {
     width: 13%;
     height: 40%;
     border-radius: 7px;
-    background-image: url(imgs/galaxy2.jpg);
     background-position: unset;
     border: solid 3px black;
-    box-shadow:inset 1px 1px 3px azure;
+    box-shadow: inset 1px 1px 3px azure;
     position: absolute;
 }
 
@@ -108,7 +166,7 @@ body {
     border-radius: 7px;
     margin-left: 6%;
     margin-top: 3%;
-    color: blueviolet;
+    color: azure;
     font-size: 17px;
 }
 
@@ -118,9 +176,10 @@ body {
     height: 20px;
     padding: 1%;
     border-radius: 7px;
-    box-shadow:inset 2px 2px 2px azure;
+    box-shadow: inset 2px 2px 2px azure;
     font-family: cursive, bold;
 }
+
 #spaceOfResult {
     width: 20%;
     height: 8%;
@@ -129,51 +188,80 @@ body {
     text-align: right;
 }
 
-#imgWanda {
-    width: 70px;
-    height: auto;
+#comer {
+    background-color: darkgrey;
+    border-radius: 15px 4px 15px 4px;
+    border: solid 3px azure;
+    color: azure;
+    padding: 0.3%;
 }
 
-.pagina {
-display: grid;
-grid-template-columns: 30% 70%;
+#comer:hover {
+    padding: 0.6%;
+    background-color: dimgray;
+    animation-direction: normal;
+    animation-range-end: 3px;
 }
 
-.contieneTodo {
-    display: grid;
-    grid-template-columns: 100%;
-    row-gap: 50px;
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-image: url(imgs/footer.jpg);
+    opacity: .8;
+
+    image-rendering: optimizeQuality;
+    background-position: bottom;
+    width: 1000px;
+    height: 230px;
 }
 
-.conteiner1 {
-    background-color: aqua;
-}
-
-header {
-    background-color: darkslateblue;
-    border: solid 2px goldenrod;
-    box-shadow: inset 10px 10px 15px;
-    box-shadow: 9px 9px 12px black;
+.footer {
     width: 100%;
-    height: 50px;
-    color: azure;
+    height: 230px;
+}
+
+.acomodoFooter {
     display: grid;
-    grid-template-columns: 10% 10% 40% 40%;
-    text-align: center;
-    border-radius: 15px;
-    align-items: center;
-    background: transparent;
+    grid-template-columns: 48.5% 40%;
+    gap: 5%;
 }
 
-
-.titulo {
-    color: azure;
-    font-family: cursive, bold;
-    font-size: 30px;
+hr {
+    transform:rotate(90deg);
+    position: absolute;
+    width: 150px;
+    margin-left: 43%;
+    margin-top: -12%;
 }
 
-.texto1 {
+.footerLeft {
     color: azure;
-    font-family: cursive, bold;
-    font-size: 18x;
+    font-size: 25px;
+    text-shadow:
+    5px 5px 10px black,
+    0 0 5em black,
+    0 0 0.9em black;
+    text-align: right;
+    margin-top: 15%;
+}
+
+.footerRight {
+    color: azure;
+    font-size: 25px;
+    text-shadow:
+    5px 5px 10px black,
+    0 0 5em black,
+    0 0 0.9em black;
+    text-align: left;
+    margin-top: 18%;
 }

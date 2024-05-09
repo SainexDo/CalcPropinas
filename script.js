@@ -58,6 +58,7 @@ botonmultiplicaion.addEventListener('click', function () {
 })
 botonigual.addEventListener('click', function () {
     screen.textContent = eval(screen.textContent)
+    NIXON.innerHTML = eval(screen.textContent)
 })
 botonTrash.addEventListener('click', function () {
     screen.innerHTML = '';
@@ -78,11 +79,14 @@ botonTrashP.addEventListener('click', function () {
 function modalc(a) {
     screenP.innerHTML += a
 }
-
+let NIXON = document.getElementById('NIXON')
 botonigualP.addEventListener('click', function () {
     let Rscreen = screen.textContent;
     let RscreenP = screenP.textContent;
     RscreenP = RscreenP / 100;
     Rscreen = eval(screen.textContent)
     screenP.innerHTML = Rscreen * RscreenP;
+    RscreenP.textContent + Rscreen.textContent;
 })
+
+

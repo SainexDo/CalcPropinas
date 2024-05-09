@@ -8,80 +8,154 @@
 </head>
 <body>
 
-    <header>
-        <div>LOGO</div>
-        <div>Sobre mí</div>
-        <div>Contacto</div>
-        <div>JUrgen</div>
-    </header>
-
-    <h2 class="titulo">Lorem.</h2>
-    <div class="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, numquam necessitatibus? Eius explicabo, saepe amet dignissimos nihil dolore adipisci labore enim quis rerum consectetur, eos, quo nostrum ipsa facilis maiores.</div>
-    <button class="buttonModal" onclick="window.modal1.show();">Calculadora</button>
-
-    <dialog id="modal1">
-        <div class="screenOfCalculator">
-            <div id="spaceOfScreen"></div>
-            <div id="spaceOfResult"></div>
-        </div>
-        <div class="keyboardCalculator">
-            <div class="buttons">
-                <input class="button" id="button-1" type="button" value="1">
-                <input class="button" id="button-2" type="button" value="2">
-                <input class="button" id="button-3" type="button" value="3">
-                <input class="button" id="button-+" type="button" value="+">
-
-                <input class="button" id="button-4" type="button" value="4">
-                <input class="button" id="button-5" type="button" value="5">
-                <input class="button" id="button-6" type="button" value="6">
-                <input class="button" id="button--" type="button" value="-">
-
-                <input class="button" id="button-7" type="button" value="7">
-                <input class="button" id="button-8" type="button" value="8">
-                <input class="button" id="button-9" type="button" value="9">
-                <input class="button" id="button-*" type="button" value="*">
-
-                <button class="button" onclick="window.modal1.close();">OFF</button>
-                <input class="button" id="button-DEL" type="button" value="DEL">
-                <input class="button" id="button-0" type="button" value="0">
-                <input class="button" id="button-/" type="button" value="/">
-
-                <input class="button" id="button-trash" type="button" value="C">
-                <input class="button" id="button-=" type="button" value="=">
-                <button class="buttonGreen" id="Propina" onclick="window.modal2.show();">PROPINA</button>
+    <div class="containerAll">
+        <nav>
+            <a href="http://">
+                <div class="elementsnav">
+                    <div class="icononav"></div>
+                    <div class="textnav">About me</div>
             </div>
-        </div>
-    </dialog>
-    <dialog id="modal2">
-        <div class="screenOfPropines">
-            <div id="spaceOfScreenP"></div>
-            <div id="spaceOfResultP"></div>
-        </div>
-        <div class="keyboardOfPropines">
-            <div class="keyboardCalculator">
-                <div class="buttonsP">
-                    <input class="buttonP" onclick=modalc(1) id="button-1p" type="button" value="1">
-                    <input class="buttonP" onclick=modalc(2) id="button-2p" type="button" value="2">
-                    <input class="buttonP" onclick=modalc(3) id="button-3p" type="button" value="3">
-                    <input class="buttonP" onclick=modalc(4) id="button-4p" type="button" value="4">
-                    <input class="buttonP" onclick=modalc(5) id="button-5p" type="button" value="5">
-                    <input class="buttonP" onclick=modalc(6) id="button-6p" type="button" value="6">
-                    <input class="buttonP" onclick=modalc(7) id="button-7p" type="button" value="7">
-                    <input class="buttonP" onclick=modalc(8) id="button-8p" type="button" value="8">
-                    <input class="buttonP" onclick=modalc(9) id="button-9p" type="button" value="9">
+            </a>
 
-                    <input class="buttonP" id="button-trashp" type="button" value="C">
-                    <input class="buttonP" id="button-=p" type="button" value="=">
-                    <button class="buttonP" onclick="window.modal2.close();">OFF</button>
+
+            <div class="elementsnav">
+                <div class="icononav"></div>
+                <div class="textnav">¿Proceso?</div>
+            </div>
+            <div class="elementsnav">
+                <div class="icononav"></div>
+                <div class="textnav">Funny</div>
+            </div>
+            <div class="elementsnav">
+                <div class="icononav"></div>
+                <div class="textnav"></div>
+            </div>
+        </nav>
+        <div class="mainFace">
+            <header>
+                <div class="mainFaceText">Lorem.</div>
+                <div class="mainFaceText1">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. Ea, qui?</div>
+            </header>
+            <div class="mainFace2">
+                <main>
+                    <button onclick="window.modal1.show()" class="abridores">Calc1</button>
+                    <button onclick="window.modal2.show()" class="abridores">Calc2</button>
+                    <button class="abridores"></button>
+                    <dialog id="modal1">
+                        <div class="screenOfCalculator">
+                            <div id="spaceOfScreen"></div>
+                            <div id="spaceOfResult"></div>
+                        </div>
+                        <div class="keyboardCalculator">
+                            <div class="buttons">
+                                <input class="button" id="button-1" type="button" value="1">
+                                <input class="button" id="button-2" type="button" value="2">
+                                <input class="button" id="button-3" type="button" value="3">
+                                <input class="button" id="button-+" type="button" value="+">
+                
+                                <input class="button" id="button-4" type="button" value="4">
+                                <input class="button" id="button-5" type="button" value="5">
+                                <input class="button" id="button-6" type="button" value="6">
+                                <input class="button" id="button--" type="button" value="-">
+                
+                                <input class="button" id="button-7" type="button" value="7">
+                                <input class="button" id="button-8" type="button" value="8">
+                                <input class="button" id="button-9" type="button" value="9">
+                                <input class="button" id="button-*" type="button" value="*">
+                
+                                <button class="button" onclick="window.modal1.close();">OFF</button>
+                                <input class="button" id="button-DEL" type="button" value="DEL">
+                                <input class="button" id="button-0" type="button" value="0">
+                                <input class="button" id="button-/" type="button" value="/">
+                
+                                <input class="button" id="button-trash" type="button" value="C">
+                                <input class="button" id="button-=" type="button" value="=">
+                                <button class="buttonGreen" id="Propina" onclick="window.modal2.show();">PROPINA</button>
+                            </div>
+                        </div>
+                    </dialog>
+                    <!---------------SEPARACION DE MODALES---------------->
+                    <dialog id="modal2">
+                        <div class="screenOfPropines">
+                            <div id="spaceOfScreenP"></div>
+                            <div id="spaceOfResultP"></div>
+                        </div>
+                        <div class="keyboardOfPropines">
+                            <div class="keyboardCalculator">
+                                <div class="buttonsP">
+                                    <input class="buttonP" onclick=modalc(1) id="button-1p" type="button" value="1">
+                                    <input class="buttonP" onclick=modalc(2) id="button-2p" type="button" value="2">
+                                    <input class="buttonP" onclick=modalc(3) id="button-3p" type="button" value="3">
+                                    <input class="buttonP" onclick=modalc(4) id="button-4p" type="button" value="4">
+                                    <input class="buttonP" onclick=modalc(5) id="button-5p" type="button" value="5">
+                                    <input class="buttonP" onclick=modalc(6) id="button-6p" type="button" value="6">
+                                    <input class="buttonP" onclick=modalc(7) id="button-7p" type="button" value="7">
+                                    <input class="buttonP" onclick=modalc(8) id="button-8p" type="button" value="8">
+                                    <input class="buttonP" onclick=modalc(9) id="button-9p" type="button" value="9">
+                
+                                    <input class="buttonP" id="button-trashp" type="button" value="C">
+                                    <input class="buttonP" id="button-=p" type="button" value="=">
+                                    <button class="buttonP" onclick="window.modal2.close();">OFF</button>
+                                </div>
+                            </div>
+                        </div>
+                    </dialog>
+                </main>
+                <div class="infoPersonal">
+                    <div class="info1">
+                        <div class="imgInfo1"></div>
+                        <div class="tetoInfo"></div>
+                    </div>
+                    <div class="info2">
+                        <div class="imgInfo1"></div>
+                        <div class="tetoInfo"></div>
+                    </div>
+                    <div class="iconos">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </dialog>
+    </div>
+
+    <footer>
+        <div class="acomodoFooter">
+            <div class="footerLeft">
+                <div class="infoFooterLeft">Hecho por: Franco M.L.</div>
+                <div class="infoFooterLeft">Derechos reservados: "Ley Nº 6683"</div>
+            </div>
+
+            <div class="footerRight">
+                <div class="infoFooterRight">Pagina de calculo.</div>
+                <div class="infoFooterRight">correo: sainex1314@gmail.com</div>
+            </div>
+        </div>
+    </footer>
+
+
+    <hr>
+
+    
+    <!-- <button id="comer" onclick=comer()>COMER</button> -->
+<!-- 
+        <button class="buttonModal" onclick="window.modal1.show();">Calculadora</button> -->
+
+
+
+
 
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
 
 
 
