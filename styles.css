@@ -1,6 +1,6 @@
-/* 
-    image-rendering: optimizeQuality;
-    background-position: unset; */
+body {
+    background-color: #9eb4b9;
+}
 
 .containerAll {
     display: grid;
@@ -11,16 +11,20 @@
     position: absolute;
     margin-top: 0%;
     color: azure;
-    font-size: 30px;
+    font-size: 40px;
     font-family: bolder, Tahoma, cursive;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 2%;
     .titulo {font-size: 77px; text-shadow: -20px 0px 7px red;}
+    text-shadow:
+    5px 5px 10px black,
+    0 0 5em black,
+    0 0 0.9em black;
 }
 .mainFaceText1 {
     position: absolute;
     color: azure;
-    font-size: 30px;
+    font-size: 22px;
     margin-top: 10%;
     margin-left: 2%;
     text-shadow:
@@ -49,11 +53,17 @@ nav {
 
 .elementsnav {
     width: 100%;
-    height: 55px;
-    background-color: darkcyan;
+    height: 70px;
+    background-color: cadetblue;
     border-radius: 5px 10px 10px 5px;
     box-shadow: 2px 3px 4px black;
     border-top: 2px azure;
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: cursive;
 }
 
 
@@ -67,23 +77,22 @@ nav {
 
 
 #modal1 {
+    background-color: rgb(28, 27, 27);
     width: 20%;
     height: 50%;
     margin-left: 35%;
-    margin-top: -3%;
+    margin-top: 3%;
     border-radius: 7px;
-    background-image: url(imgs/galaxy2.jpg);
     border: solid 3px black;
     box-shadow: inset 1px 1px 3px azure;
     position: absolute;
 }
 
 .buttonModal {
-    background-color: deeppink;
+    background-color: dimgrey;
     border: solid 2px azure;
     border-radius: 10px;
     color: azure;
-
 }
 
 .buttonModal:hover {
@@ -93,22 +102,21 @@ nav {
 
 .screenOfCalculator {
     border: solid 3px black;
-    width: 88%;
+    width: 100%;
     height: 25%;
-    backdrop-filter: blur(3px);
+    background-color: darkolivegreen;
     border-radius: 7px;
-    margin-left: 6%;
-    margin-top: 3%;
+    margin-left: -1%;
+    margin-top: -2%;
     font-family: cursive, bold;
     color: azure;
     font-size: 25px;
-
 }
 
 .buttons {
     margin-left: 6%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: ; ACOMODO DE LOS BOTONES DE LA CALCULADPRA */
     margin-top: 10%;
     column-gap: 5px;
     row-gap: 5px;
@@ -119,6 +127,7 @@ nav {
     width: 30px;
     height: 25px;
     padding: 1%;
+    border: inset rgb(183, 177, 177) 2px;
     border-radius: 7px;
     box-shadow: inset 2px 2px 2px azure;
     font-family: cursive, bold;
@@ -139,6 +148,7 @@ nav {
 
 #modal2 {
     margin-left: 60%;
+    background-color: cyan;
     margin-top: 5%;
     width: 13%;
     height: 40%;
