@@ -21,6 +21,7 @@ body {
     0 0 5em black,
     0 0 0.9em black;
 }
+
 .mainFaceText1 {
     position: absolute;
     color: azure;
@@ -35,6 +36,7 @@ body {
 
 header {
     background-image: url(imgs/header.avif);
+    object-fit: cover;
     image-rendering: optimizeQuality;
     background-position: unset;
     height: 200px;
@@ -113,15 +115,6 @@ nav {
     font-size: 25px;
 }
 
-.buttons {
-    margin-left: 6%;
-    display: grid;
-    /* grid-template-columns: ; ACOMODO DE LOS BOTONES DE LA CALCULADPRA */
-    margin-top: 10%;
-    column-gap: 5px;
-    row-gap: 5px;
-}
-
 .button {
     background-color: pink;
     width: 30px;
@@ -133,6 +126,15 @@ nav {
     font-family: cursive, bold;
 }
 
+.buttons {
+    margin-left: 6%;
+    display: grid;
+    grid-template-columns: 25% auto auto auto;
+    margin-top: 10%;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
 .buttonGreen {
     background-color: greenytlow;
     width: 77px;
@@ -141,9 +143,6 @@ nav {
     border-radius: 7px;
     box-shadow: inset 2px 2px 2px azure;
     font-family: cursive, bold;
-    margin-left: 42%;
-    margin-top: 52%;
-    position: absolute;
 }
 
 #modal2 {
@@ -274,4 +273,37 @@ hr {
     0 0 0.9em black;
     text-align: left;
     margin-top: 18%;
+}
+
+#modal3 {
+    background: url(imgs/pergamino.webp);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 9%;
+}
+
+.containerInfoPersonal {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.parrafo {
+    font-size: 10px;
+    font-family: cursive, bold, fantasy;
+    color: black;
+}
+
+.infoPersonal {
+    width: 70px;
+    height: 100px;
+}
+
+#papuMisterioso {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px inset chocolate;
 }

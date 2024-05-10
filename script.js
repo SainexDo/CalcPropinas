@@ -93,5 +93,3 @@ botonigualP.addEventListener('click', function () {
     RscreenP.textContent + Rscreen.textContent;
     screen.innerHTML = (Rscreen + Rscreen * RscreenP)
 })
-
-
