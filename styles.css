@@ -1,66 +1,161 @@
-#modal1 {
-    width: 30%;
-    height: 80%;
-    border-radius: 7px;
-    background-color: deeppink;
-    border: solid 3px black;
-    box-shadow:inset 1px 1px 3px azure;
+body {
+    background-color: #9eb4b9;
 }
+
+.containerAll {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.mainFaceText {
+    position: absolute;
+    margin-top: 0%;
+    color: azure;
+    font-size: 40px;
+    font-family: bolder, Tahoma, cursive;
+    margin-top: 2%;
+    margin-left: 2%;
+    .titulo {font-size: 77px; text-shadow: -20px 0px 7px red;}
+    text-shadow:
+    5px 5px 10px black,
+    0 0 5em black,
+    0 0 0.9em black;
+}
+
+.mainFaceText1 {
+    position: absolute;
+    color: azure;
+    font-size: 22px;
+    margin-top: 10%;
+    margin-left: 2%;
+    text-shadow:
+    5px 5px 10px black,
+    0 0 5em black,
+    0 0 0.9em black;
+}
+
+header {
+    background-image: url(imgs/header.avif);
+    object-fit: cover;
+    image-rendering: optimizeQuality;
+    background-position: unset;
+    height: 200px;
+}
+
+nav {
+    position: relative;
+    background-color: darkslategray;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 35px;
+    color: azure;
+}
+
+.elementsnav {
+    width: 100%;
+    height: 70px;
+    background-color: cadetblue;
+    border-radius: 5px 10px 10px 5px;
+    box-shadow: 2px 3px 4px black;
+    border-top: 2px azure;
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+#modal1 {
+    background-color: rgb(28, 27, 27);
+    width: 20%;
+    height: 50%;
+    margin-left: 35%;
+    margin-top: 3%;
+    border-radius: 7px;
+    border: solid 3px black;
+    box-shadow: inset 1px 1px 3px azure;
+    position: absolute;
+}
+
+.buttonModal {
+    background-color: dimgrey;
+    border: solid 2px azure;
+    border-radius: 10px;
+    color: azure;
+}
+
+.buttonModal:hover {
+    background-color: bisque;
+}
+
 
 .screenOfCalculator {
     border: solid 3px black;
-    width: 88%;
+    width: 100%;
     height: 25%;
-    background-color: palevioletred;
+    background-color: darkolivegreen;
     border-radius: 7px;
-    margin-left: 6%;
-    margin-top: 3%;
+    margin-left: -1%;
+    margin-top: -2%;
     font-family: cursive, bold;
     color: azure;
-    font-size: 35px;
+    font-size: 25px;
+}
+
+.button {
+    background-color: pink;
+    width: 30px;
+    height: 25px;
+    padding: 1%;
+    border: inset rgb(183, 177, 177) 2px;
+    border-radius: 7px;
+    box-shadow: inset 2px 2px 2px azure;
+    font-family: cursive, bold;
 }
 
 .buttons {
     margin-left: 6%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 25% auto auto auto;
     margin-top: 10%;
-    column-gap: 15px;
-    row-gap: 15px;
-}
-
-.button {
-    background-color: pink;
-    width: 60px;
-    height: 45px;
-    padding: 1%;
-    border-radius: 7px;
-    box-shadow:inset 2px 2px 2px azure;
-    font-family: cursive, bold;
+    column-gap: 5px;
+    row-gap: 5px;
 }
 
 .buttonGreen {
-    background-color: greenyellow;
-    width: 100px;
-    height: 45px;
-    padding: 1%;
+    background-color: greenytlow;
+    width: 77px;
+    height: 25px;
+    padding: 2%;
     border-radius: 7px;
-    box-shadow:inset 2px 2px 2px azure;
+    box-shadow: inset 2px 2px 2px azure;
     font-family: cursive, bold;
-    margin-left: 52%;
-    margin-top: 58%;
-    position: absolute;
 }
 
 #modal2 {
-    margin-left: 67%;
-    position: relative;
-    width: 15%;
-    height: 50%;
+    margin-left: 60%;
+    background-color: cyan;
+    margin-top: 5%;
+    width: 13%;
+    height: 40%;
     border-radius: 7px;
-    background-color: green;
+    background-position: unset;
     border: solid 3px black;
-    box-shadow:inset 1px 1px 3px azure;
+    box-shadow: inset 1px 1px 3px azure;
+    position: absolute;
 }
 
 .buttonsP {
@@ -69,7 +164,7 @@
     grid-template-columns: repeat(3, 1fr);
     margin-top: 10%;
     column-gap: 15px;
-    row-gap: 15px;
+    row-gap: 12px;
 }
 
 .screenOfPropines {
@@ -80,17 +175,135 @@
     border-radius: 7px;
     margin-left: 6%;
     margin-top: 3%;
-    font-family: cursive, bold;
     color: azure;
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .buttonP {
     background-color: greenyellow;
-    width: 45px;
-    height: 35px;
+    width: 30px;
+    height: 20px;
     padding: 1%;
     border-radius: 7px;
-    box-shadow:inset 2px 2px 2px azure;
+    box-shadow: inset 2px 2px 2px azure;
     font-family: cursive, bold;
+}
+
+#spaceOfResult {
+    width: 20%;
+    height: 8%;
+    position: relative;
+    margin-left: 80%;
+    text-align: right;
+}
+
+#comer {
+    background-color: darkgrey;
+    border-radius: 15px 4px 15px 4px;
+    border: solid 3px azure;
+    color: azure;
+    padding: 0.3%;
+}
+
+#comer:hover {
+    padding: 0.6%;
+    background-color: dimgray;
+    animation-direction: normal;
+    animation-range-end: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-image: url(imgs/footer.jpg);
+    opacity: .8;
+
+    image-rendering: optimizeQuality;
+    background-position: bottom;
+    width: 1000px;
+    height: 230px;
+}
+
+.footer {
+    width: 100%;
+    height: 230px;
+}
+
+.acomodoFooter {
+    display: grid;
+    grid-template-columns: 48.5% 40%;
+    gap: 5%;
+}
+
+hr {
+    transform:rotate(90deg);
+    position: absolute;
+    width: 150px;
+    margin-left: 43%;
+    margin-top: -12%;
+}
+
+.footerLeft {
+    color: azure;
+    font-size: 25px;
+    text-shadow:
+    5px 5px 10px black,
+    0 0 5em black,
+    0 0 0.9em black;
+    text-align: right;
+    margin-top: 15%;
+}
+
+.footerRight {
+    color: azure;
+    font-size: 25px;
+    text-shadow:
+    5px 5px 10px black,
+    0 0 5em black,
+    0 0 0.9em black;
+    text-align: left;
+    margin-top: 18%;
+}
+
+#modal3 {
+    background: url(imgs/pergamino.webp);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 200px;
+    margin-left: 30%;
+    margin-top: 9%;
+}
+
+.containerInfoPersonal {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.parrafo {
+    font-size: 10px;
+    font-family: cursive, bold, fantasy;
+    color: black;
+}
+
+.infoPersonal {
+    width: 70px;
+    height: 100px;
+}
+
+#papuMisterioso {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px inset chocolate;
 }

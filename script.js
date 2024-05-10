@@ -16,9 +16,13 @@ let botonDelete = document.getElementById('button-DEL');
 let botonTrash = document.getElementById('button-trash');
 let botonPropina = document.getElementById('button-propina');
 let boton0 = document.getElementById('button-0');
+let botondivicion = document.getElementById('button-/');
 
 boton1.addEventListener('click', function () {
     screen.innerHTML += boton1.value
+})
+botonDelete.addEventListener('click', function () {
+    screen.innerHTML = screen.innerHTML.substring(0, screen.innerHTML.length-1)
 })
 boton2.addEventListener('click', function () {
     screen.innerHTML += boton2.value
@@ -41,6 +45,9 @@ boton6.addEventListener('click', function () {
 botonmenos.addEventListener('click', function () {
     screen.innerHTML += botonmenos.value
 })
+botondivicion.addEventListener('click', function () {
+    screen.innerHTML += "/"
+})
 boton7.addEventListener('click', function () {
     screen.innerHTML += boton7.value
 })
@@ -55,6 +62,7 @@ botonmultiplicaion.addEventListener('click', function () {
 })
 botonigual.addEventListener('click', function () {
     screen.textContent = eval(screen.textContent)
+    NIXON.innerHTML = eval(screen.textContent)
 })
 botonTrash.addEventListener('click', function () {
     screen.innerHTML = '';
@@ -80,8 +88,8 @@ botonigualP.addEventListener('click', function () {
     let Rscreen = screen.textContent;
     let RscreenP = screenP.textContent;
     RscreenP = RscreenP / 100;
-    screen.textContent = eval(screen.textContent)
-    Rscreen * RscreenP;
+    Rscreen = eval(screen.textContent)
+    screenP.innerHTML = Rscreen * RscreenP;
+    RscreenP.textContent + Rscreen.textContent;
+    screen.innerHTML = (Rscreen + Rscreen * RscreenP)
 })
-
-//HACER QUE LOS RESULTADOS SE ESCRIBAN EN OTRA ZONA, NO ENCIMA DE LA OPERACION.
