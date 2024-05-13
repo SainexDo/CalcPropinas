@@ -65,7 +65,19 @@ botonmultiplicaion.addEventListener('click', function () {
 })
 botonigual.addEventListener('click', function () {
     screen.textContent = eval(screen.textContent)
-    NIXON.innerHTML = eval(screen.textContent)
+    Swal.fire({
+        title: "Propina",
+        text: "¿Deseas dejar una propina?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#1a8521",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Sí, agregar propina"
+      }).then((result) => {
+        if (result.isConfirmed) {
+            modal2.show();
+        }
+      });
 })
 botonTrash.addEventListener('click', function () {
     screen.innerHTML = '';
@@ -125,26 +137,10 @@ let modal3B = document.getElementById('modal3B').onmouseover = function openModa
 
 
 
-  let FIRE = document.querySelector('#FIRE')
 
   FIRE.addEventListener('click', function () {
-    Swal.fire({
-        title: "Propina",
-        text: "¿Deseas dejar una propina?",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Sí, agregar propina"
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire({
-            
-          });
-        }
-      });
-  })
 
+  })
 
   document.addEventListener('DOMContentLoaded', function () {
     let figure = document.getElementById('photo');
