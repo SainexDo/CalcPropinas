@@ -131,6 +131,7 @@ let modal2B = document.getElementById('modal2B').onmouseover = function openModa
 let modal3B = document.getElementById('modal3B').onmouseover = function openModal1() {
     modal2.show();
     modal3.close();
+
 }
 
 
@@ -150,3 +151,6 @@ let modal3B = document.getElementById('modal3B').onmouseover = function openModa
       figure.setAttribute('tooltip-dir', this.value);
     });
   });
+
+}
+
