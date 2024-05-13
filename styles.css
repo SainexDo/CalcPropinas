@@ -1,309 +1,186 @@
 body {
-    background-color: #9eb4b9;
-}
-
-.containerAll {
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-.mainFaceText {
-    position: absolute;
-    margin-top: 0%;
-    color: azure;
-    font-size: 40px;
-    font-family: bolder, Tahoma, cursive;
-    margin-top: 2%;
-    margin-left: 2%;
-    .titulo {font-size: 77px; text-shadow: -20px 0px 7px red;}
-    text-shadow:
-    5px 5px 10px black,
-    0 0 5em black,
-    0 0 0.9em black;
-}
-
-.mainFaceText1 {
-    position: absolute;
-    color: azure;
-    font-size: 22px;
-    margin-top: 10%;
-    margin-left: 2%;
-    text-shadow:
-    5px 5px 10px black,
-    0 0 5em black,
-    0 0 0.9em black;
-}
-
-header {
-    background-image: url(imgs/header.avif);
-    object-fit: cover;
-    image-rendering: optimizeQuality;
-    background-position: unset;
-    height: 200px;
+    background-color: rgb(228, 228, 228);
+    height: 1040px;
 }
 
 nav {
-    position: relative;
-    background-color: darkslategray;
-    height: 550px;
+    width: 100%;
+    height: 65px;
+    background-color: #c0c0c0;
+    border-radius: 4px 4px 12px 12px;
+    transition: 0.5s ease;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    font-size: 35px;
-    color: azure;
+    align-items: center;
+}nav:hover {
+    height: 80px;
+}nav:active {
+    height: 75px;
 }
 
 .elementsnav {
-    width: 100%;
-    height: 70px;
-    background-color: cadetblue;
-    border-radius: 5px 10px 10px 5px;
-    box-shadow: 2px 3px 4px black;
-    border-top: 2px azure;
-    color: azure;
-    display: flex;
+    height: 80%;
+    width: 8%;
+    border-radius:11px;
+    border: solid 1px gray;
+    color: rgb(66, 66, 66);
+    font-family: bolder,Tahoma;
+    transition: background-color 0.5s ease;
+    transition: border-radius 0.5s ease;
+    background-color: rgb(223, 222, 222);
+}.elementsnav:hover {
+    transition: 0.5s;
+    background-color: white;
+    border-radius: 22px;
+}
+
+.titulo {
+    font-size: 70px;
+    font-family: 'Times New Roman', serif, monospace;
+    color: darkslategray;
     align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    font-family: cursive;
+    text-align: center;
+    margin-top: 2%;
+    transition:  color 0.8s ease;
+    transition:  font-size 0.8s ease;
+}.titulo:hover {
+    color: rgb(98, 98, 126);
+    font-size: 80px;
 }
 
-
-
-
-
-
-
-
-
-
-
-#modal1 {
-    background-color: rgb(28, 27, 27);
-    width: 20%;
-    height: 50%;
-    margin-left: 35%;
-    margin-top: 3%;
-    border-radius: 7px;
-    border: solid 3px black;
-    box-shadow: inset 1px 1px 3px azure;
-    position: absolute;
-}
-
-.buttonModal {
-    background-color: dimgrey;
-    border: solid 2px azure;
-    border-radius: 10px;
-    color: azure;
-}
-
-.buttonModal:hover {
-    background-color: bisque;
-}
-
-
-.screenOfCalculator {
-    border: solid 3px black;
+main {
     width: 100%;
-    height: 25%;
-    background-color: darkolivegreen;
-    border-radius: 7px;
-    margin-left: -1%;
-    margin-top: -2%;
-    font-family: cursive, bold;
-    color: azure;
-    font-size: 25px;
-}
-
-.button {
-    background-color: pink;
-    width: 30px;
-    height: 25px;
-    padding: 1%;
-    border: inset rgb(183, 177, 177) 2px;
-    border-radius: 7px;
-    box-shadow: inset 2px 2px 2px azure;
-    font-family: cursive, bold;
-}
-
-.buttons {
-    margin-left: 6%;
-    display: grid;
-    grid-template-columns: 25% auto auto auto;
-    margin-top: 10%;
-    column-gap: 5px;
-    row-gap: 5px;
-}
-
-.buttonGreen {
-    background-color: greenytlow;
-    width: 77px;
-    height: 25px;
-    padding: 2%;
-    border-radius: 7px;
-    box-shadow: inset 2px 2px 2px azure;
-    font-family: cursive, bold;
-}
-
-#modal2 {
-    margin-left: 60%;
-    background-color: cyan;
-    margin-top: 5%;
-    width: 13%;
-    height: 40%;
-    border-radius: 7px;
-    background-position: unset;
-    border: solid 3px black;
-    box-shadow: inset 1px 1px 3px azure;
-    position: absolute;
-}
-
-.buttonsP {
-    margin-left: 3%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 10%;
-    column-gap: 15px;
-    row-gap: 12px;
-}
-
-.screenOfPropines {
-    border: solid 3px black;
-    width: 88%;
-    height: 25%;
-    background-color: rgb(67, 148, 51);
-    border-radius: 7px;
-    margin-left: 6%;
+    height: 480px;
+    background-color: #d1d1d1;
     margin-top: 3%;
-    color: azure;
-    font-size: 17px;
+    border-radius: 10px;
+    margin-bottom: 2%;
 }
-
-.buttonP {
-    background-color: greenyellow;
-    width: 30px;
-    height: 20px;
-    padding: 1%;
-    border-radius: 7px;
-    box-shadow: inset 2px 2px 2px azure;
-    font-family: cursive, bold;
-}
-
-#spaceOfResult {
-    width: 20%;
-    height: 8%;
-    position: relative;
-    margin-left: 80%;
-    text-align: right;
-}
-
-#comer {
-    background-color: darkgrey;
-    border-radius: 15px 4px 15px 4px;
-    border: solid 3px azure;
-    color: azure;
-    padding: 0.3%;
-}
-
-#comer:hover {
-    padding: 0.6%;
-    background-color: dimgray;
-    animation-direction: normal;
-    animation-range-end: 3px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
-    background-image: url(imgs/footer.jpg);
-    opacity: .8;
-
-    image-rendering: optimizeQuality;
-    background-position: bottom;
-    width: 1000px;
-    height: 230px;
-}
-
-.footer {
     width: 100%;
-    height: 230px;
-}
-
-.acomodoFooter {
+    height: 300px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    color: dimgray;
+    font-size: 32px;
+    font-style: oblique;
     display: grid;
-    grid-template-columns: 48.5% 40%;
-    gap: 5%;
-}
-
-hr {
-    transform:rotate(90deg);
-    position: absolute;
-    width: 150px;
-    margin-left: 43%;
-    margin-top: -12%;
-}
-
-.footerLeft {
-    color: azure;
-    font-size: 25px;
-    text-shadow:
-    5px 5px 10px black,
-    0 0 5em black,
-    0 0 0.9em black;
-    text-align: right;
-    margin-top: 15%;
-}
-
-.footerRight {
-    color: azure;
-    font-size: 25px;
-    text-shadow:
-    5px 5px 10px black,
-    0 0 5em black,
-    0 0 0.9em black;
+    grid-template-columns: 48% auto;
+    column-gap: 3%;
+    align-items: center;
+    transition:  color 0.6s ease;
+    transition:  font-size 0.6s ease;
+}.footerRight {
     text-align: left;
-    margin-top: 18%;
+}.footerLeft {
+    text-align: right;
+}footer:hover {
+    color: rgb(51, 51, 51);
+    font-size: 38px;
+    transition: 0.6s;
 }
 
-#modal3 {
-    background: url(imgs/pergamino.webp);
-    object-fit: cover;
-    background-repeat: no-repeat;
-    width: 350px;
-    height: 200px;
-    margin-left: 30%;
-    margin-top: 9%;
+#modal1 {
+    width: 20%;
+    height: 60%;
+    border: none;
+    border-radius: 12px;
+    margin-right: 53%;
+    margin-top: 2%;
 }
 
-.containerInfoPersonal {
+.calculator {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .screen {
+    width: 92%;
+    height: 50px;
+    background-color: #f2f2f2;
+    border: none;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+
+  #spaceOfScreenP {
+    width: 92%;
+    height: 50px;
+    background-color: #f2f2f2;
+    border: none;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+
+  .buttons {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  .button {
+    border: none;
+    background-color: #e0e0e0;
+    width: 100%;
+    padding: 25%;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #d0d0d0;
+  }
+
+  .button:active {
+    background-color: #bfbfbf;
+  }
+
+  .operator {
+    background-color: #f0f0f0;
+  }
+
+  #modal2 {
+    margin-left: 50%;
+    width: 18%;
+    height: 50%;
+    border: none;
+    border-radius: 12px;
+    margin-right: 60%;
+    margin-top: 4.5%;
+  }
+
+  .container {
+    position: relative;
+    display: inline-block;
 }
 
-.parrafo {
-    font-size: 10px;
-    font-family: cursive, bold, fantasy;
-    color: black;
+/* .bubble {
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ NO CREO QU ESTO SIRVA
+.bubble-right {
+    top: 50%;
+    left: 100%;
+    transform: translate(10px, -50%);
 }
 
-.infoPersonal {
-    width: 70px;
-    height: 100px;
-}
-
-#papuMisterioso {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: 5px inset chocolate;
-}
+.bubble-left {
+    top: 50%;
+    right: 100%;
+    transform: translate(-100%, -50%);
+} */

@@ -1,4 +1,4 @@
-let screen = document.getElementById('spaceOfScreen');
+let screen = document.querySelector('.screen');
 let boton1 = document.getElementById('button-1');
 let boton2 = document.getElementById('button-2');
 let boton3 = document.getElementById('button-3');
@@ -13,9 +13,12 @@ let boton9 = document.getElementById('button-9');
 let botonmultiplicaion = document.getElementById('button-*');
 let botonigual = document.getElementById('button-=');
 let botonDelete = document.getElementById('button-DEL');
+let botonDeleteP = document.getElementById('button-DELp');
 let botonTrash = document.getElementById('button-trash');
 let botonPropina = document.getElementById('button-propina');
 let boton0 = document.getElementById('button-0');
+let boton0P = document.getElementById('button-0p');
+
 let botondivicion = document.getElementById('button-/');
 
 boton1.addEventListener('click', function () {
@@ -70,6 +73,12 @@ botonTrash.addEventListener('click', function () {
 boton0.addEventListener('click', function () {
     screen.innerHTML += boton0.value
 })
+botonDeleteP.addEventListener('click', function () {
+    screenP.innerHTML = screenP.innerHTML.substring(0, screenP.innerHTML.length-1)
+})
+boton0P.addEventListener('click', function () {
+    screenP.innerHTML += boton0P.value
+})
 
 let screenP = document.getElementById('spaceOfScreenP');
 
@@ -92,4 +101,22 @@ botonigualP.addEventListener('click', function () {
     screenP.innerHTML = Rscreen * RscreenP;
     RscreenP.textContent + Rscreen.textContent;
     screen.innerHTML = (Rscreen + Rscreen * RscreenP)
-})
+});
+
+let modal1 = document.getElementById('modal1');
+let modal2 = document.getElementById('modal2');
+let modal3 = document.getElementById('modal3');
+
+let modal1B = document.getElementById('modal1B').onmouseover = function openModal1() {
+    modal3.show();
+    modal1.close();
+    modal2.close();
+};
+let modal2B = document.getElementById('modal2B').onmouseover = function openModal1() {
+    modal1.show();
+    modal3.close();
+}
+let modal3B = document.getElementById('modal3B').onmouseover = function openModal1() {
+    modal2.show();
+    modal3.close();
+}
