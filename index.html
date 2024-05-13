@@ -33,6 +33,86 @@
             <div class="screenOfCalculator">
                 <div class="screen"></div>
                 <div id="spaceOfResult"></div>
+
+            </div>
+            <div class="keyboardCalculator">
+                <div class="buttons">
+                    <input class="button" id="button-1" type="button" value="1">
+                    <input class="button" id="button-2" type="button" value="2">
+                    <input class="button" id="button-3" type="button" value="3">
+                    <input class="button" id="button-trash" type="button" value="C">
+
+                    <input class="button" id="button-4" type="button" value="4">
+                    <input class="button" id="button-5" type="button" value="5">
+                    <input class="button" id="button-6" type="button" value="6">
+                    <button class="button" onclick="window.modal1.close();">off</button>
+
+                    <input class="button" id="button-7" type="button" value="7">
+                    <input class="button" id="button-8" type="button" value="8">
+                    <input class="button" id="button-9" type="button" value="9">
+                    <input class="button" id="button-=" type="button" value="=">
+
+                    <input class="button" id="button-+" type="button" value="+">
+                    <input class="button" id="button--" type="button" value="-">
+                    <input class="button" id="button-*" type="button" value="*">
+                    <input class="button" id="button-/" type="button" value="/">
+        
+
+                    <input class="button" id="button-DEL" type="button" value="D">
+                    <input class="button" id="button-0" type="button" value="0">
+            </div>
+        </dialog>
+        <dialog id="modal2">
+            <div class="screenOfPropines">
+                <div id="spaceOfScreenP"></div>
+                <div id="spaceOfResultP"></div>
+            </div>
+            <div class="keyboardOfPropines">
+                <div class="keyboardCalculator">
+                    <div class="buttons">
+                        <input class="button" onclick=modalc(1) id="button-1p" type="button" value="1">
+                        <input class="button" onclick=modalc(2) id="button-2p" type="button" value="2">
+                        <input class="button" onclick=modalc(3) id="button-3p" type="button" value="3">
+                        <input class="button" id="button-trashp" type="button" value="C">
+                        <input class="button" onclick=modalc(4) id="button-4p" type="button" value="4">
+                        <input class="button" onclick=modalc(5) id="button-5p" type="button" value="5">
+                        <input class="button" onclick=modalc(6) id="button-6p" type="button" value="6">
+                        <button class="button" onclick="window.modal2.close();">off</button>
+                        <input class="button" onclick=modalc(7) id="button-7p" type="button" value="7">
+                        <input class="button" onclick=modalc(8) id="button-8p" type="button" value="8">
+                        <input class="button" onclick=modalc(9) id="button-9p" type="button" value="9">
+                        <input class="button" id="button-=p" type="button" value="=">
+                        <input class="button" id="button-DELp" type="button" value="D">
+                        <input class="button" id="button-0p" type="button" value="0">
+                    </div>
+                </div>
+            </div>
+        </dialog>
+        <dialog id="modal3">
+
+
+            <figure id="photo" title="¿Qué color de falda quieres?" tooltip-dir="left">
+                <div class="img"><img src="imgs/ELPAPUMISTERIOSO.jpg" alt="" id="imgInfo"></div>
+              </figure>
+
+
+            <div class="nombreInfo">Franco Moreno</div>
+            <div class="ocupacionInfo">Night Programmer</div>
+            <div class="infoDirecciones">
+                <div> </div>
+                <div id="ubi">
+                    <div><img id="correoIcon" src="imgs/icons8-correo-50 (1).png" alt=""></div>
+                    <div class="emailInfo">@sainex1314</div>
+                </div>
+                <div id="mail">
+                    <div><img id="ubicacionIcon" src="imgs/icons8-delivery-pin-for-parcel-delivery-location-making-48.png" alt=""></div>
+                    <div class="ubicacionInfo">San Luis</div>
+                </div>
+            </div>
+        </dialog>
+    </main>
+<h1>HAHAHA</h1>
+
             </div>
             <div class="keyboardCalculator">
                 <div class="buttons">
@@ -95,6 +175,7 @@
     </main>
 
 
+
     <footer>
         <div class="footerLeft">
             <div class="infoFooter">Pag. hecha por:<br><br></div>
@@ -107,6 +188,11 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+
 </body>
 </html>
 
@@ -128,3 +214,4 @@
 
 
 <!--  -->
+
